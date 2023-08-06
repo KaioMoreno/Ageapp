@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kaio Moreno">
+    <meta name="description" content="A website of scheduling system">
+    <meta name="keywords" content="javascript,nodejs,login,reggister">
+    <title>Ageapp</title>
+
+    <link rel="stylesheet" href="login.css">
+
+</head>
+
+<body>
+
+    <%- include('asidebar') %>
+
+    <div class="divlogin">
+
+        <div class="divform">
+        <h1 class="h1login">Login</h1>
+
+        <form id="formlogin" action="">
+
+            <div class="divinputlogin">
+                <img id="iconuser" src="icons8-usuário.png" alt="https://icons8.com/icon/84020/usu%C3%A1rio">
+                <input class="inputlogin" type="text" id="username" name="username" placeholder="Digite seu usuário" required>
+            </div>
+
+            <div class="divinputpass">
+                <img id="iconpass" src="icons8-senha.png" alt="https://icons8.com/icon/107272/senha">
+                <input class="inputpass" type="password" id="password" name="password" placeholder="Digite sua senha" required>
+            </div>
+            
+        </form>
+
+        <a id="linkpass" href="">Esqueceu sua senha?</a>
+        <a id="linkregister" href="/register">Não tem um conta? Crie aqui</a>
+
+        <button id="loginbutton">Login</button>
+        </div>
+    </div>
+
+</body>
+
+</html>

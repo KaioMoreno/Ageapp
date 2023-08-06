@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.divregister {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.divform {
+    background-color: #2e3535;
+    text-align: center;
+    padding: 90px;
+}
+
+.h1register {
+    font-size: 50px;
+    position: relative;
+    bottom: 25px;
+    color: azure;
+}
+
+.divinputuser {
+    position: relative;
+    right: 7px;
+    margin-top: 10px;
+}
+
+.divinputemail {
+    position: relative;
+    right: 7px;
+    margin-top: 5px;
+}
+
+.divinputpass {
+    position: relative;
+    right: 7px;
+    margin-top: 5px;
+}
+
+.inputuser {
+    padding: 8px;
+    text-align: center;
+}
+
+.inputemail {
+    padding: 8px;
+    text-align: center;
+}
+
+.inputpass {
+    padding: 8px;
+    text-align: center;
+}
+
+#iconuser {
+    position: relative;
+    top: 7px;
+    width: 26px;
+}
+
+#iconemail {
+    position: relative;
+    top: 7px;
+    width: 26px;
+}
+
+#iconpass{
+    position: relative;
+    top: 7px;
+    width: 26px;
+}
+
+#registrarbutton {
+    position: relative;
+    top: 20px;  
+    font-size: 16px;
+    border: 1px solid azure;
+    border-radius: 8px;
+    color: azure;
+    background-color: #2e3535;
+    padding: 8px;
+    width: 150px;
+}
+
+#registrarbutton:hover {
+    transform: scale(1.1);
+}
+
+#linkregister {
+    font-size: 12px;
+}
+
+#linkregister:hover {
+    transform: scale(1.1);
+}

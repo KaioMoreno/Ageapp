@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+.divlogin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.divform {
+    background-color: #2e3535;
+    text-align: center;
+    padding: 90px;
+}
+
+.h1login {
+    font-size: 50px;
+    position: relative;
+    bottom: 25px;
+    color: azure;
+}
+
+.divinputlogin {
+    color: azure;
+    margin-top: 10px;
+}
+
+.divinputpass {
+    margin-top: 5px;
+}
+
+.inputlogin {
+    padding: 8px;
+    text-align: center;
+}
+
+.inputpass {
+    padding: 8px;
+    text-align: center;
+}
+
+.linksform {
+    border: 1px solid rgb(255, 254, 254);
+}
+
+#linkpass {
+    align-items: end;
+    padding: 5px;
+    margin-top: 3px;
+    font-size: 9px;
+    color: azure;
+
+}
+
+#linkregister  {
+    position: relative;
+    top: 90px;
+    padding: 5px;
+    margin-top: 3px;
+    font-size: 10px;
+    color: azure;
+    border: 1px solid rgba(255, 254, 254, 0.322);
+    border-radius: 8px; 
+}
+
+#linkregister:hover {
+    transform: scale(1.1);
+}
+
+#loginbutton {
+    position: relative;
+    bottom: 22px;
+    font-size: 16px;
+    border: 1px solid azure;
+    border-radius: 8px;
+    color: azure;
+    background-color: #2e3535;
+    padding: 8px;
+    width: 150px;
+}
+
+#loginbutton:hover {
+    transform: scale(1.1);
+}
+
+#iconuser {
+    position: relative;
+    top: 7px;
+    width: 26px;
+}
+
+#iconpass {
+    position: relative;
+    top: 7px;
+    width: 26px;
+}
