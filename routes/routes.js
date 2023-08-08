@@ -1,5 +1,6 @@
-const routes = require('express').Router();
-const taskcontroller = require('../controller/taskcontroller');
+import express from 'express'
+const routes = express.Router()
+import taskcontroller from '../controller/taskcontroller.js'
 
 // routes.get('/home', taskcontroller.Home);
 // routes.get('/login', taskcontroller.Login);
@@ -8,4 +9,4 @@ routes.post('/create', taskcontroller.create);
 
 
 
-module.exports = routes;
+export default routes;

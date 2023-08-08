@@ -1,5 +1,5 @@
-const bcrypt = require('bcrypt'); // Importando o bcrypt para fazer o hash de senha
-const userService = require('../services/userService'); // Importando o userService
+import bcrypt from 'bcrypt' // Importando o bcrypt para fazer o hash de senha
+import userService from '../services/userService.js'   // Importando o userService
 
 const Home = (req, res) => {
     try {
@@ -52,7 +52,7 @@ const create = async (req, res) => {
 };
 
 
-module.exports = {
+export default {
     Home,
     Login,
     Register,

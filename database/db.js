@@ -1,6 +1,8 @@
-const mongoose = require('mongoose');
+import mongoose from 'mongoose'
+import dotenv from 'dotenv'
+dotenv.config()
 
-require('dotenv').config()   // Configurando as variaveis do ambiente (.env)
+// dotenv.config()   // Configurando as variaveis do ambiente (.env)
 
 const dbUser = process.env.DB_USER;
 const dbPass = process.env.DB_PASS;
@@ -16,4 +18,4 @@ const connectDb = async () => {
     }
 };
 
-module.exports = connectDb;
+export default connectDb;
