@@ -1,4 +1,3 @@
-import bcrypt from 'bcrypt' // Importando o bcrypt para fazer o hash de senha
 import userService from '../services/userService.js'   // Importando o userService
 
 const Home = (req, res) => {
