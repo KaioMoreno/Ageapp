@@ -1,0 +1,21 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "AgeAPP API Documentation",
+        "description": "In this documentation you will be able to consult the API end-points and also test all available routes. Do not forget to register and carry out the authorization.",
+    "version": "1.0.0"       
+    },
+    
+    "servers": [{
+        "url": "http://localhost:3000",
+        "description": "Local Server"
+    }],
+    "paths": {
+        "/login": {},
+        "/home": {},
+        "/register":{},
+        "/agendamento":{},
+        "/create": {}
+    },
+    "components": {}
+}

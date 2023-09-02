@@ -24,7 +24,16 @@ const Register = (req, res) => {
     }
 };
 
-const create = async (req, res) => {
+const Agendamento = (req, res) => {
+    try {
+        return res.render()
+    } catch(err) {
+        res.status(401).send(err)
+    }
+}
+
+const Create = async (req, res) => {
+
     const {username, email, password} = req.body;
 
     if(!username || !email || !password) {      // Fazendo a verificação se todos os campos foram preenchidos
@@ -55,6 +64,7 @@ export default {
     Home,
     Login,
     Register,
-    create,
+    Agendamento,
+    Create,
     
 };

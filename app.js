@@ -5,9 +5,7 @@ import path from 'path'   // Isso importa o módulo path do Node.js, que fornece
 import { fileURLToPath } from 'url'  // Essa função é usada para converter uma URL de arquivo em um caminho de sistema de arquivos.
 import connectDb from './database/db.js'
 import dotenv from 'dotenv'
-
-
-
+import swaggerRoute from './routes/swaggerroute.js'
 
 
 dotenv.config()  // dotenv.config()   // Configurando as variaveis do ambiente (.env)
@@ -26,6 +24,7 @@ app.set('view engine', 'ejs');
 
 app.use(routes);
 app.use(authroutes);
+app.use('/doc', swaggerRoute)
 app.use(express.urlencoded());
 
 connectDb();
