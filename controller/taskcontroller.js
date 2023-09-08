@@ -32,13 +32,13 @@ const Agendamento = (req, res) => {
     }
 }
 
-const Create = async (req, res) => {
+const Create = async (req, res, error) => {
 
     const {username, email, password} = req.body;
 
     if(!username || !email || !password) {      // Fazendo a verificação se todos os campos foram preenchidos
 
-        res.status(400).send({ message: 'You have to type in all fields' });  
+        res.status(400).send({ message: 'You have to type in all fields'});  
     };
 
     const user = await userService.create(req.body);

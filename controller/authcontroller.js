@@ -8,7 +8,7 @@ const Login = async (req, res) => {
         const user = await loginService(email);
 
         if(!user) {
-            return res.status(400).send('Senha ou Usuário incorreto.')
+            return res.status(400).send('Usuário incorreto.')
         }
 
         const passwordValid =  bcrypt.compareSync(password, user.password);

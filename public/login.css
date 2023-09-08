@@ -10,7 +10,6 @@
     align-items: center;
     justify-content: center;
     height: 80vh;
-    border: 1px solid rgb(255, 255, 255);
 }
 
 .divform {
@@ -49,33 +48,9 @@
     border: 1px solid rgb(255, 254, 254);
 }
 
-#linkpass {
-    align-items: end;
-    padding: 5px;
-    margin-top: 3px;
-    font-size: 9px;
-    color: azure;
-
-}
-
-#linkregister  {
-    position: relative;
-    top: 90px;
-    padding: 5px;
-    margin-top: 3px;
-    font-size: 10px;
-    color: azure;
-    border: 1px solid rgba(255, 254, 254, 0.322);
-    border-radius: 8px; 
-}
-
-#linkregister:hover {
-    transform: scale(1.1);
-}
-
 #loginbutton {
     position: relative;
-    bottom: 22px;
+    top: 8px;
     font-size: 16px;
     border: 1px solid azure;
     border-radius: 8px;
@@ -83,6 +58,7 @@
     background-color: #2e3535;
     padding: 8px;
     width: 150px;
+    border: 2px solid white;
 }
 
 #loginbutton:hover {
@@ -99,4 +75,30 @@
     position: relative;
     top: 7px;
     width: 26px;
+}
+
+#linkpass {
+    position: relative;
+    bottom: 20px;
+    padding: 5px;
+    font-size: 10px;
+    color: azure;
+
+}
+
+#linkregister  {
+    position: relative;
+    top: 50px;
+    padding: 5px;
+    margin-top: 3px;
+    font-size: 10px;
+    color: azure;
+    border: 1px solid rgba(255, 254, 254, 0.322);
+    border-radius: 8px; 
+}
+
+
+#linkpass:hover,
+#linkregister:hover {
+    transform: scale(1.1);
 }

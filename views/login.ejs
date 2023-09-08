@@ -11,7 +11,7 @@
     <title>Ageapp</title>
 
     <link rel="stylesheet" href="login.css">
-
+    <script src="../controller/axioscontroller.js"></script>
 </head>
 
 <body>
@@ -23,24 +23,23 @@
         <div class="divform">
         <h1 class="h1login">Login</h1>
 
-        <form id="formlogin" action="">
+        <form id="formlogin" action="/login" method="post">
 
             <div class="divinputlogin">
                 <img id="iconuser" src="icons8-usuário.png" alt="https://icons8.com/icon/84020/usu%C3%A1rio">
-                <input class="inputlogin" type="text" id="username" name="username" placeholder="Digite seu usuário" required>
+                <input class="inputlogin" type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
             </div>
 
             <div class="divinputpass">
                 <img id="iconpass" src="icons8-senha.png" alt="https://icons8.com/icon/107272/senha">
                 <input class="inputpass" type="password" id="password" name="password" placeholder="Digite sua senha" required>
             </div>
-            
+            <button type="submit" id="loginbutton">Login</button>
         </form>
 
         <a id="linkpass" href="">Esqueceu sua senha?</a>
         <a id="linkregister" href="/register">Não tem um conta? Crie aqui</a>
 
-        <button id="loginbutton">Login</button>
         </div>
     </div>
 
